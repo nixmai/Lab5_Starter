@@ -1,5 +1,3 @@
-// expose.js
-
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
@@ -40,7 +38,7 @@ function init() {
   // Volume change
   volumeSlider.addEventListener('input', () => {
     const vol = Number(volumeSlider.value);
-    hornAudio.volume = vol / 100; // JS uses 0–1 for audio volume
+    hornAudio.volume = vol / 100;
 
     if (vol === 0) {
       volumeIcon.src = 'assets/icons/volume-level-0.svg';
